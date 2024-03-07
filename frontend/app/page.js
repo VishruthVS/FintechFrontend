@@ -77,7 +77,7 @@ function App() {
               </button>
             </Link>
             <button
-              className="button border border-white text-white py-2 px-4 rounded-lg"
+              className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg  text-center mr-2 mb-2 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] py-2 px-4 "
               onClick={connectWallet}
             >
               <span className="font-bold">
