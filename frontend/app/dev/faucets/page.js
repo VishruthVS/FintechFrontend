@@ -1,5 +1,5 @@
-function page() {
+function Faucets() {
   return <div>page</div>;
 }
 
-export default page;
+export default Faucets;

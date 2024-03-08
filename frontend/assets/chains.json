@@ -1,0 +1,33 @@
+[
+    {
+      "logo": "/goerli-faucet.png",
+      "title": "Goerli Faucet",
+      "description": "An Ethereum testnet faucet powered by Alchemy.",
+      "chain": "Ethereum"
+    },
+    {
+      "logo": "/matic-supply.png",
+      "title": "Matic Supply",
+      "description": "Polygon faucet that sends a small amount of MATIC tokens to be used as transaction fees.",
+      "chain": "Polygon"
+    },
+    {
+      "logo": "/polygon-faucet.png",
+      "title": "Polygon Faucet",
+      "description":"Polygon Faucet is a tool that provides developers free testnet tokens for testing and development.",
+      "chain": "Polygon"
+    },
+    {
+      "logo": "/sol-faucet.png",
+      "title": "Sol Faucet",
+      "description": "A Solana testnet faucet provided by Alchemy.",
+      "chain": "Solana"
+    },
+    {
+      "logo": "/superchain-faucet.png",
+      "title": "Superchain Faucet",
+      "description": "Super chain Faucet provides testnet tokens for various blockchain networks.",
+      "chain": "Multi-chain"
+    }
+  ]
+  
