@@ -1,33 +1,100 @@
 [
-    {
-      "logo": "/goerli-faucet.png",
-      "title": "Goerli Faucet",
-      "description": "An Ethereum testnet faucet powered by Alchemy.",
-      "chain": "Ethereum"
-    },
-    {
-      "logo": "/matic-supply.png",
-      "title": "Matic Supply",
-      "description": "Polygon faucet that sends a small amount of MATIC tokens to be used as transaction fees.",
-      "chain": "Polygon"
-    },
-    {
-      "logo": "/polygon-faucet.png",
-      "title": "Polygon Faucet",
-      "description":"Polygon Faucet is a tool that provides developers free testnet tokens for testing and development.",
-      "chain": "Polygon"
-    },
-    {
-      "logo": "/sol-faucet.png",
-      "title": "Sol Faucet",
-      "description": "A Solana testnet faucet provided by Alchemy.",
-      "chain": "Solana"
-    },
-    {
-      "logo": "/superchain-faucet.png",
-      "title": "Superchain Faucet",
-      "description": "Super chain Faucet provides testnet tokens for various blockchain networks.",
-      "chain": "Multi-chain"
-    }
-  ]
-  
+  {
+    "logo": "/arbitrum.svg",
+    "title": "Arbitrum Goerli Faucet",
+    "description": "An easy-to-use, no BS Arbitrum Goerli testnet faucet. Request testnet ETH on Arbitrum Goerli from here!",
+    "chain": "Arbitrum Goerli",
+    "url": "https://faucet.triangleplatform.com/arbitrum/goerli"
+  },
+  {
+    "logo": "/arbitrum.svg",
+    "title": "Arbitrum Sepolia faucet",
+    "description": "Get testnet Arbitrum Sepolia funds with this trusted faucet in just a few steps. Try it yourself!",
+    "chain": "Arbitrum Sepolia",
+    "url": "https://bwarelabs.com/faucets/arbitrum-sepolia-testnet"
+  },
+  {
+    "logo": "/aptos.svg",
+    "title": "Aptos Testnet Faucet",
+    "description": "Your premiere source of testnet APT. Get testnet Aptos funds from this trusted Aptos faucet with just a few clicks!",
+    "chain": "Aptos",
+    "url": "https://aptoslabs.com/testnet-faucet"
+  },
+  {
+    "logo": "/avalanche.svg",
+    "title": "Avalanche Fuji Testnet Faucet",
+    "description": "Supercharge your projects with this official Avalanche faucet! Request 2 AVAX per day on the Fuji testnet",
+    "chain": "Avalanche",
+    "url": "https://faucet.avax.network/"
+  },
+  {
+    "logo": "/base.svg",
+    "title": "Base Goerli faucet",
+    "description": "Build on Base with ease using this trusted Base Goerli faucet. Get testnet funds for all your building and testing needs!",
+    "chain": "Base Goerli",
+    "url": "https://bwarelabs.com/faucets/base-testnet"
+  },
+  {
+    "logo": "/bnb.svg",
+    "title": "BNB Chain Testnet Faucet",
+    "description": "Claim a daily 0.5 BNB on the BNB Chain testnet! No signup required for this BNB Chain testnet faucet",
+    "chain": "BNB Chain",
+    "url": "https://testnet.bnbchain.org/faucet-smart"
+  },
+  {
+    "logo": "/chainlink.svg",
+    "title": "Chainlink Testnet Faucet",
+    "description": "Get testnet LINK for building Chainlink projects & testing purposes with this Chainlink testnet faucet",
+    "chain": "Chainlink",
+    "url": "https://faucets.chain.link/"
+  },
+  {
+    "logo": "/fantom.svg",
+    "title": "Fantom Testnet Faucet",
+    "description": "Request 5 testnet FTM once per address with this trusted Fantom testnet faucet, with any signup needed!",
+    "chain": "Fantom",
+    "url": "https://faucet.fantom.network/"
+  },
+  {
+    "logo": "/oasis.svg",
+    "title": "Oasis Network Testnet Faucet",
+    "description": "Start building on the Oasis Network with this Oasis testnet faucet. Get up to ten testnet tokens with this faucet",
+    "chain": "Oasis Network",
+    "url": "https://faucet.testnet.oasis.dev/"
+  },
+  {
+    "logo": "/optimism.svg",
+    "title": "Optimism Goerli Faucet",
+    "description": "Get Optimism Goerli test ETH from our trusted Optimism faucet! Try out the easiest, free Optimism Goerli faucet!",
+    "chain": "Optimism",
+    "url": "https://faucet.triangleplatform.com/optimism/goerli"
+  },
+  {
+    "logo": "/polygon.svg",
+    "title": "Polygon Mumbai Faucet",
+    "description": "Test your Polygon projects! Receive a daily dose of Polygon testnet tokens from the Mumbai faucet.",
+    "chain": "Polygon POS (Mumbai)",
+    "url": "https://faucet.polygon.technology/"
+  },
+  {
+    "logo": "/polygon.svg",
+    "title": "Polygon zkEVM Faucet",
+    "description": "Polygon Faucet is a tool that provides developers free testnet tokens for testing and development.",
+    "chain": "Polygon zkEVM (blueberry)",
+    "url": "https://faucet.polygon.technology/"
+  },
+  {
+    "logo": "/eth.svg",
+    "title": "Sepolia Faucet",
+    "description": "Ethereum Sepolia Testnet is one of the several test networks available for the Ethereum blockchain",
+    "chain": "Ethereum",
+    "url": "https://goerli-faucet.slock.it/"
+  },
+  {
+    "logo": "/solana.svg",
+    "title": "Solana Testnet Faucet",
+    "description": "Solana development has never been easier. Get testnet SOL from this Solana testnet faucet in minutes",
+    "chain": "Solana",
+    "url": "https://solfaucet.com/"
+  }
+]
