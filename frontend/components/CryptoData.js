@@ -44,7 +44,15 @@
 // export default CryptoData;
 // components/CryptoNews.js
 "use client";
-import Image from "next/image";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Divider,
+  Image,
+  Link,
+} from "@nextui-org/react";
 import { useEffect, useState } from "react";
 
 const CryptoNews = () => {
@@ -69,36 +77,50 @@ const CryptoNews = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Crypto News</h1>
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> */}
-      <div className="grid grid-cols-1 gap-4">
-        {Array.isArray(news) && news.length > 0 ? ( // Check if news is an array and has items
+
+      <div className="grid grid-cols-1 gap-4 ">
+        {Array.isArray(news) && news.length > 0 ? (
           news.map((item) => (
-            <div key={item.event_id} className="border p-4 rounded-md">
-              <h2 className="text-xl font-semibold mb-2">{item.event_name}</h2>
-              <p>{item.event_text}</p>
-              <p>Date: {item.date}</p>
-              {item.tickers.length > 0 && (
-                <p>
-                  Tickers:{" "}
-                  {item.tickers.map((ticker) => (
-                    <span key={ticker}>{ticker} </span>
-                  ))}
-                </p>
-              )}
-              {item.image && (
-                <div className="mt-4 rounded-md" style={{ maxWidth: "100%" }}>
-                  <Image
-                    src={item.image}
-                    alt="News Image"
-                    width={600}
-                    height={400}
-                  />
+            <Card
+              key={item.event_id}
+              className={`bg-gradient-to-r animate-spin-slow p-8 md:w-[60vw] mt-8 ml-4 shadow-2xl `}
+            >
+              {/* //max-w-[600px] */}
+              <CardHeader className="flex gap-3">
+                <Image
+                  alt="news image"
+                  height={80}
+                  radius="sm"
+                  src="/eth.svg"
+                  width={80}
+                />
+                <div className="flex flex-col">
+                  <p className="text-lg font-semibold">{item.event_name}</p>
+                  <p className="text-small text-default-500">{item.date}</p>
                 </div>
-              )}
-            </div>
+              </CardHeader>
+              <Divider />
+              <CardBody>
+                <p>{item.event_text}</p>
+                {item.tickers.length > 0 && (
+                  <p>
+                    Tickers:{" "}
+                    {item.tickers.map((ticker) => (
+                      <span key={ticker}>{ticker} </span>
+                    ))}
+                  </p>
+                )}
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <Link isExternal showAnchorIcon href={item.source_url}>
+                  Read more
+                </Link>
+              </CardFooter>
+            </Card>
           ))
         ) : (
-          <p>No news available</p> // Render a message if there are no news items
+          <p>No news available</p>
         )}
       </div>
     </div>
