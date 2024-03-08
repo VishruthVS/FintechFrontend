@@ -54,10 +54,11 @@ import {
   Link,
 } from "@nextui-org/react";
 import { useEffect, useState } from "react";
+import Loading from "./loading";
 
 const CryptoNews = () => {
   const [news, setNews] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -66,6 +67,7 @@ const CryptoNews = () => {
         );
         const json = await response.json();
         setNews(json.data || []); // Ensure news is initialized as an array
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -73,7 +75,9 @@ const CryptoNews = () => {
 
     fetchData();
   }, []);
-
+  if (loading) {
+    return <Loading />; // Show loading UI if data is being fetched
+  }
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Crypto News</h1>
