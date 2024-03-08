@@ -73,7 +73,17 @@ function App() {
             <h1 className="text-2xl text-white">FinTech agent</h1>
             <Link href="/swap">
               <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg  text-center mr-2 mb-2 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] py-2 px-4 ">
-                Go to the swap page
+                Swap
+              </button>
+            </Link>
+            <Link href="/news">
+              <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg  text-center mr-2 mb-2 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] py-2 px-4 ">
+                News
+              </button>
+            </Link>
+            <Link href="/dev">
+              <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg  text-center mr-2 mb-2 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] py-2 px-4 ">
+                Developers
               </button>
             </Link>
             <button
@@ -83,9 +93,9 @@ function App() {
               <span className="font-bold">
                 {walletAddress && walletAddress.length > 0
                   ? `Connected: ${walletAddress.substring(
-                      0,
-                      6
-                    )}...${walletAddress.substring(38)}`
+                    0,
+                    6
+                  )}...${walletAddress.substring(38)}`
                   : "Connect Wallet"}
               </span>
             </button>
